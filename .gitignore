@@ -1,0 +1,12 @@
+/_build/
+/deps/
+/ebin/
+/cover/
+*/*.beam
+*/*.dump
+
+/mix.lock
+/doc/
+/priv/static/
+*/*.env
+.DS_Store
