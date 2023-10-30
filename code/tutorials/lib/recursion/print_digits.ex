@@ -33,4 +33,14 @@ defmodule Tutorials.Recursion.PrintDigits do
   def factorial(num, acc) do
     factorial(num - 1, acc * num)
   end
+
+  # reverse num
+  def reverse_number(num, acc \\ 0)
+  def reverse_number(0, acc), do: acc
+
+  def reverse_number(num, acc) do
+    new_num = div(num, 10)
+    new_acc = acc * 10 + rem(num, 10)
+    reverse_number(new_num, new_acc)
+  end
 end
