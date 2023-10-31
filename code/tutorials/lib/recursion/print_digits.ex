@@ -43,4 +43,15 @@ defmodule Tutorials.Recursion.PrintDigits do
     new_acc = acc * 10 + rem(num, 10)
     reverse_number(new_num, new_acc)
   end
+
+  #lists are always linked
+  def sum_list(list)
+  def sum_list([]), do: 0
+
+  def sum_list([head | tail]) do
+    head + sum_list(tail)
+  end
+
+
+
 end
