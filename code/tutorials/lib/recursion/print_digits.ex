@@ -1,4 +1,9 @@
 defmodule Tutorials.Recursion.PrintDigits do
+  @moduledoc """
+  Function summary: Set of functions that print stuff
+
+  1. countupto: writes a count in desc or asc to arg provided
+  """
   def countupto(0), do: 0
 
   # tail rec
@@ -45,7 +50,13 @@ defmodule Tutorials.Recursion.PrintDigits do
   end
 
   #lists are always linked
+  @doc """
+  Returns the sum of nums in a list
+  """
+
+  @spec sum_list(list(number())) :: number()
   def sum_list(list)
+
   def sum_list([]), do: 0
 
   def sum_list([head | tail]) do
